@@ -1,3 +1,5 @@
+![Logo should be here :c](https://cognitionlab.gq/cognitionlab.png "CognitionLab")
+
 # CognitionLab Examples
 
 Example code for the [CognitionLab](https://cognitionlab.gq/) API.
