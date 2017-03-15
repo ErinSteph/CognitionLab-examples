@@ -4,8 +4,6 @@
 <input type="text" placeholder="name">
 <textarea id="message" style="width:275;" placeholder="message"></textarea>
 <button type="button">Send</button>
-<br>
-<div></div>
 </body>
 <script type="text/javascript">
 
