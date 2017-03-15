@@ -8,6 +8,8 @@
 <script type="text/javascript">
 
 /*----- Set Mashape application key and mind name here -----*/
+/*-----  Be careful! Mashape key can be read on page!  -----*/
+/*----- Don't use this example as-is out in the wild!  -----*/
 
   var mashapeKey = '';
   var mind = 'Mind';
