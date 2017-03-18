@@ -2,7 +2,7 @@
 
 # CognitionLab Examples
 
-Example code for the [CognitionLab](https://cognitionlab.gq/) API.
+Example code for the [CognitionLab](https://cognitionlab.gq/) Mind API.
 
 You can obtain free API keys and read basic documentation at the [Mashape API Marketplace](https://market.mashape.com/erinsteph/cognitionlab).
 
