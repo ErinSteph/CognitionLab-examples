@@ -1,4 +1,4 @@
-![Logo should be here :c](https://cognitionlab.gq/cognitionlab-350.png "CognitionLab")
+![Logo should be here :c](https://cognitionlab.gq/cognitionlabltd-350.png "CognitionLab")
 
 # CognitionLab Examples
 
