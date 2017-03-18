@@ -4,7 +4,7 @@
 
 Example code for the [CognitionLab](https://cognitionlab.gq/) API.
 
-You can obtain API keys and read basic documentation at [Mashape](https://market.mashape.com/erinsteph/cognitionlab)
+You can obtain free API keys and read basic documentation at the [Mashape API Marketplace](https://market.mashape.com/erinsteph/cognitionlab).
 
 Examples:
 * [PHP](https://github.com/ErinSteph/CognitionLab-examples/blob/master/php-example.php) - Some PHP functions and their usage
