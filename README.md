@@ -1,8 +1,8 @@
-![Logo should be here :c](https://cognitionlab.gq/cognitionlabltd_350.png "CognitionLab")
+![Logo should be here :c](https://cognitionlab.ltd/cognitionlabltd_350.png "CognitionLab")
 
 # CognitionLab Examples
 
-Example code for the [CognitionLab](https://cognitionlab.gq/) Mind API.
+Example code for the [CognitionLab](https://cognitionlab.ltd/) Mind API.
 
 You can obtain free API keys and read basic documentation at the [Mashape API Marketplace](https://market.mashape.com/erinsteph/cognitionlab).
 
