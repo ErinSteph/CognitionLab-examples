@@ -16,10 +16,10 @@ $mashapeKey = 'ExampleLotsOfRandomChars856HKDSwwqe54v';
 
 function api($mindName, $userName, $message){
   global $mashapeKey;
-  $api = 'https://erinsteph-cognitionlab-v1.p.mashape.com';
-  $api .= '/mind/' . rawurlencode($mindName);  //  use rawurlencode() over urlencode()   //
-  $api .= '/user/' . rawurlencode($userName); //  to encode spaces as %20 rather than + //
-  $api .= '/message/' . rawurlencode($message);
+  $api = 'https://erinsteph-cognitionlab-v1.p.mashape.com/mind';
+  $api .= '/' . rawurlencode($mindName);  //  use rawurlencode() over urlencode()   //
+  $api .= '/' . rawurlencode($userName); //  to encode spaces as %20 rather than + //
+  $api .= '/' . rawurlencode($message);
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL, $api);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

@@ -24,10 +24,10 @@
     var message = msg.value;
     msg.value = '';
     var x = new XMLHttpRequest();
-    var url = 'https://erinsteph-cognitionlab-v1.p.mashape.com';
-    url += '/mind/' + encodeURIComponent(mind);
-    url += '/user/' + encodeURIComponent(nme.value);
-    url += '/message/' + encodeURIComponent(message);
+    var url = 'https://erinsteph-cognitionlab-v1.p.mashape.com/mind';
+    url += '/' + encodeURI(mind);
+    url += '/' + encodeURI(nme.value);
+    url += '/' + encodeURI(message);
     x.open('GET', url);
     x.setRequestHeader('X-Mashape-Key', mashapeKey);
     x.onreadystatechange = function(){
