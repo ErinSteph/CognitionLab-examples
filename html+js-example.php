@@ -24,7 +24,7 @@
     var message = msg.value;
     msg.value = '';
     var x = new XMLHttpRequest();
-    var url = 'https://erinsteph-cognitionlab-v1.p.mashape.com/mind';
+    var url = 'https://mind.p.mashape.com/mind';
     url += '/' + encodeURI(mind);
     url += '/' + encodeURI(nme.value);
     url += '/' + encodeURI(message);

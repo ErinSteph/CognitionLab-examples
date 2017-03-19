@@ -16,7 +16,7 @@ $mashapeKey = 'ExampleLotsOfRandomChars856HKDSwwqe54v';
 
 function api($mindName, $userName, $message){
   global $mashapeKey;
-  $api = 'https://erinsteph-cognitionlab-v1.p.mashape.com/mind';
+  $api = 'https://mind.p.mashape.com/mind';
   $api .= '/' . rawurlencode($mindName);  //  use rawurlencode() over urlencode()   //
   $api .= '/' . rawurlencode($userName); //  to encode spaces as %20 rather than + //
   $api .= '/' . rawurlencode($message);
@@ -31,7 +31,7 @@ function api($mindName, $userName, $message){
 
 function nuke(){
   global $mashapeKey;
-  $api = 'https://erinsteph-cognitionlab-v1.p.mashape.com/nuke';
+  $api = 'https://mind.p.mashape.com/nuke';
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL, $api);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
