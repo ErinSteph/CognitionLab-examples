@@ -2,8 +2,8 @@
 
 /*--------------------------------------------------------//
             Enter your mashape application key.
-        An application key has one available mind.
-  Create more mashape applications if you need more minds.
+   Mashape accounts and keys are free, though you can pay 
+   for pro packages with more included API if you need to.
 //--------------------------------------------------------*/
 
 $mashapeKey = 'ExampleLotsOfRandomChars856HKDSwwqe54v';
@@ -14,11 +14,13 @@ $mashapeKey = 'ExampleLotsOfRandomChars856HKDSwwqe54v';
             Becareful about using nuke though!
 //--------------------------------------------------------*/
 
-function api($mindName, $userName, $message){
+function api($mindID,$mindName, $userName, $message){
   global $mashapeKey;
-  $api = 'https://mind.p.mashape.com/mind';
-  $api .= '/' . rawurlencode($mindName);  //  use rawurlencode() over urlencode()   //
-  $api .= '/' . rawurlencode($userName); //  to encode spaces as %20 rather than + //
+  $api = 'https://mind.p.mashape.com/';
+  //  use rawurlencode() over urlencode() to encode spaces as %20 rather than +
+  $api .= '/' . rawurlencode($mindID);  
+  $api .= '/' . rawurlencode($mindName); 
+  $api .= '/' . rawurlencode($userName); 
   $api .= '/' . rawurlencode($message);
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL, $api);
@@ -29,9 +31,10 @@ function api($mindName, $userName, $message){
   return json_decode($response, true);
 }
 
-function nuke(){
+function nuke($mindID){
   global $mashapeKey;
-  $api = 'https://mind.p.mashape.com/nuke';
+  $api = 'https://mind.p.mashape.com/';
+  $mindID + '/nuke';
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL, $api);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -46,7 +49,7 @@ function nuke(){
      the message. Here we set it in script, but you can 
        easily pipe messages in from all over the web.
 //--------------------------------------------------------*/
-
+$mindID = 'Mind1';
 $mindName = 'Mind'; // A name for the bot to go by.
 $userName = 'User'; // A name for the user to go by.
 
@@ -56,7 +59,7 @@ print $userName . ' - ' . $message;
 
 print '<br>';
 
-$reply = api($mindName, $userName, $message); // Send the message and save the reply
+$reply = api($mindID, $mindName, $userName, $message); // Send the message and save the reply
 
 print $reply['mind'] . ' - ' . $reply['message'];
 
@@ -66,7 +69,7 @@ print '<br>';
      And if we want to erase the mind and start again:
 //--------------------------------------------------------*/
 
-if(nuke() === "success"){
+if(nuke($mindID) === "success"){
   print 'Mind nuked.';
 }
 

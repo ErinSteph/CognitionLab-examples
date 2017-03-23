@@ -7,12 +7,13 @@
 </body>
 <script type="text/javascript">
 
-/*----- Set Mashape application key and mind name here -----*/
+/*----- Set Mashape application key and mind info here -----*/
 /*-----  Be careful! Mashape key can be read on page!  -----*/
 /*----- Don't use this example as-is out in the wild!  -----*/
 
   var mashapeKey = '';
-  var mind = 'Mind';
+  var mind-id = 'Mind1';
+  var mind-name = 'Mind';
 
   var button = document.querySelector('button');
   var nme = document.querySelector('input');
@@ -24,8 +25,9 @@
     var message = msg.value;
     msg.value = '';
     var x = new XMLHttpRequest();
-    var url = 'https://mind.p.mashape.com/mind';
-    url += '/' + encodeURI(mind);
+    var url = 'https://mind.p.mashape.com';
+    url += '/' + encodeURI(mind-id);
+    url += '/' + encodeURI(mind-name);
     url += '/' + encodeURI(nme.value);
     url += '/' + encodeURI(message);
     x.open('GET', url);
